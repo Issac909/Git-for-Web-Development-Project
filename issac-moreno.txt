@@ -1,3 +1,144 @@
-# Learning Git commands is ez
-## Who said tech cant be intuitive
-### WEB 25
+This is the link to the completed codepen assignment.
+https://codepen.io/Exsaviorog/pen/zYYEyaX?editors=1100
+
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+    Semantic HTML are the tags used to identify what exactly a HTML element is, either for stying purposes, accessibility or Search Engine Optimization.
+
+    2. What is HTML used for? 
+    HTML is used to label and place elements in a certain order on the page.
+
+    3. What is an attribute and where do we put it? 
+    The attribute is found within the <__ = 'style'>. For example if I wanted to style a div with different styles than the other divs, I need a class. I would use <div class = "top"> ... </div>.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    Only one h1 tag can be used on a web page. The h1 tells search engines what the main topic and purpose of the web page is.
+
+    5. Name two tags that have required attributes
+    <link> requires the href = "" attribute along with the rel = "" attribute
+    <input> has many different possible attributes, one needs to be applied so it knows its function. (ex. <input type = "password">)
+
+    6. What do we put in the head of our HTML document? 
+    The head take meta content that will not be displayed on the web page. This includes <title> and references to outside sources to be implemented into your HTML.
+
+    7. What is an id? 
+    An ID set <div id = "idName">, gives the "div" (or whatever element you choose) an ID which can be used to apply CSS styles. In CSS you would call the ID by using #idName {}
+
+    8. What elements can I add an id to? 
+    An ID can be applied to any element.  Depending on the element type, styling may need to include a display property in order to style properly.
+
+    9. How many times can I use the same id on a page? 
+    There is no limit to the amount of IDs that you can make, BUT you can only use 1 ID per 1 element.
+
+    10. What is a class? 
+    A class has the same function for CSS as ID. The major difference is 1 class can be used on as many elements as you please.
+
+    11. What elements can I add a class to? 
+    You can add a class to any element(s) that would use the same CSS styling.
+
+    12. How many times can I use the same class on a page? 
+    No limit to the amount of times. A single class can be used on multiple elements.
+
+    13. How do I get my link to open in a new tab?
+    Inside of an anchor tag for example, We are able to add an attribute called "target" that takes the value "_blank" (a href ="" target = "_blank"). So the url (href) will open a new tab ("_blank").
+
+    14. What is the alt attribute used for? 
+    An alt attribute is used on an image (<img>) tag and will display text written in its value, only if the image url (<img src = "" alt = "This is the alt attribute") is invalid or not found. The alt attribute is also essential for screen readers. (accessibility)
+    
+    15. How do I reference an id?
+    You would reference ID in your CSS with a #. (#idName {styles: style;})
+
+    16. What is the difference between a section and a div
+    A div is usually used for styling only because it doesnt have Semantic meaning. A Section has Semantic meaning because a <section> tag tells the browser that the content within the tag is related and should be read together.
+
+    17. What is CSS used for? 
+    CSS is used to position and add effects using HTML markup.
+
+    18. How to we select an element? Example - every h2 on the page
+    You can select every element of a certain tag by using ex. p {font-size: 2rem;}. If the tag has a class or ID you would select them with .class{...;} and #ID {...;} repectivley.
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    The difference is the amount of times you can use a single class or ID. Class can be used on every element you please, while ID can only be used on 1 element. You would wanna use a class if each of your sections use the same CSS styles. You would wanna use an ID if you want to single out a specific anchor tag out of the <nav>
+
+    20. How do we select classes in CSS?
+    To select a class for styling in CSS, use the "." prefix then the name of your class. (ex. .class {styles: style;})
+
+    21. How do we select a p element with a single class of “human””?
+    If calling the class name with ".human" isnt enough, we can get more specific by telling CSS to grab all the <p> tags first, So CSS would look like: p .human {styles: style;}
+
+    22. What is a parent child selector? When would this be useful? 
+    The above answer gave an example of "parent child selector". It is calling all elements with <p> tag first then filtering the <p> tags with the class ".human", before applying CSS styles.
+
+    23. How do you select all links within a div with the class of sidebar?
+    In order to specify which links you want to apply styles to, instead of using the "a" for anchor in CSS, we will use both "a" and ".sidebar".  a .sidebar {styles: style;}
+
+    24. What is a pseudo selector?
+    A pseudo selector is represented with semicolon(:) after the CSS element. They are used to represent or check the status of the element. A common pseudo selector example is :hover, which checks if a mouse is hovering over the specified element, then applies new CSS when the condition is met.
+
+    25. What do we use the change the spacing between lines?
+    line-height: 1em;
+
+    26. What do we use to change the spacing between letters?
+    letter-spacing: 1em;
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    border: 1px dotted black;
+
+    29. How do I select everything on the page? 
+    *{}
+    30. How do I write a comment in CSS?
+    /* comment */
+    31. How do I find out what file I am in, when I am using the command line? 
+    cd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    git rm File.txt
+
+    34. Why should I use version control? 
+    Version control is useful because it keeps tabs of what has been added or removed everytime theres a new pull request.
+
+    35. How often should I commit to github?
+    Every 20 minutes or so.
+
+    36. What is the command we would use to push our repo up to github? 
+    git push origin branch-name
+
+    37. Walk me through Lambda's git flow. 
+    1. Fork the repo
+    2. Add TL as collaborator in the GitHub repo "settings", be sure to copy the "invite link" and send the it to your TL through direct message in Slack.
+    3. Clone the now forked repo off of GitHub (copy clone url)
+    4. Open Git terminal and use command "cd" until you reached the folder you want the repo in. (Check the current folder content with "ls")
+    5. Once you get cd into the desired folder, type in "git clone + (Paste the clone (url link))"
+    6. Checkout into a NEW branch by typing "git checkout -b branch-name" or switch to an exisiting branch with "git checkout branch-name" ("branch-name" in this case can be replaced by your name and/or whatever you worked on).
+    7. After checkout, proceed to opening and completing the project in VSCode.
+    8. Every once in a while, you want to commit the changes to the project by using "git add ." ("." in this case selects everything in the folder), then type "git commit -m "Version #" ("-m" in this case can be a message about progress to the development team or a version #).
+    9. When you are finished with the project and ready to push the changes onto GitHub, type in "git push origin branch-name"
+    10. After "git push" is executed, you will get a link to your "pull request" in the Git terminal, hold "ctrl" and left-click the link(url) to open the pull request on GitHub.com in your browser.
+    11. Before completing the pull request, on the right hand side, make sure to choose your TL as the "reviewer" after clicking the cog icon.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    A block element will take up the entire line(s) on a page and push new elements to the next line. An inline element can be used within a block element without forcing the block elements onto another line.
+
+    2. What happens when an element is positioned absolutely? 
+    When an element is positioned absolute, It will be brought to the top if it is positioned behind an element.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    display: inline-block;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    <div> <section> <footer> are block by default. <span> and <a> are inline by default.
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+    The box model is the structure around every element. It consists of the distance between other elements(margin), the limits of the content inside(border), the whitespace between the border and content (padding), and the content itself (content). When we want to play with an elements box model, CSS has default settings that we have to overwrite in order to size the box-model correctly.
+    To fix the box-model so that we overwrite the CSS defaults, we can use "box-sizing: border-box" on the universal selector (*). (* {box-sizing: border-box;})
+
+
